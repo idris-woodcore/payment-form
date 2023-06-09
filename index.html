@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Title -->
+    <title>Pooler</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="./assets/css/vendor.min.css" />
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="./assets/css/theme.minc619.css?v=1.0" />
+
+    <link
+      rel="preload"
+      href="./assets/css/theme.min.css"
+      data-hs-appearance="default"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="./assets/css/theme-dark.min.css"
+      data-hs-appearance="dark"
+      as="style"
+    />
+    <style>
+      .intl-tel-input {
+        display: table-cell;
+      }
+      .intl-tel-input .selected-flag {
+        z-index: 4;
+      }
+      .intl-tel-input .country-list {
+        z-index: 5;
+      }
+      .input-group .intl-tel-input .form-control {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 0;
+      }
+      .iti {
+        width: 100% !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <script src="./assets/js/hs.theme-appearance.js"></script> -->
+
+    <main id="content" role="main" class="main">
+      <div
+        class="position-fixed top-0 end-0 start-0 bg-img-start"
+        style="
+          height: 32rem; /*! background-image: url(assets/svg/components/card-6.svg); */
+        "
+      >
+        <div class="shape shape-bottom zi-1">
+          <svg
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1921 273"
+          >
+            <polygon fill="#fff" points="0,273 1921,273 1921,0 "></polygon>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container py-5 py-sm-7">
+        <div class="mx-auto" style="max-width: 30rem">
+          <div id="checkoutStepOrderSummary">
+            <div class="card mb-3 mb-lg-5">
+              <div
+                class="card"
+                style="
+                  /*! border: solid 1px #eaeaea; */ /*! background: #fbfbfb; */
+                "
+              >
+                <div class="card-body">
+                  <!-- List Group -->
+                  <ul class="list-group list-group-flush list-group-no-gutters">
+                    <li class="list-group-item">
+                      <div
+                        class="d-flex justify-content-between align-items-start"
+                      >
+                        <img
+                          class="avatar-img"
+                          src="./assets/svg/logos/poolerlogo.svg"
+                          alt="Description"
+                        />
+                        <span class="display-4" id="amount_">&#8358;3000</span>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item">
+                      <!-- <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <h5>Merchant name</h5>
+                        <h5>Samuel Joseph</h5>
+                      </div> -->
+                      <ul class="list-unstyled list-py-2 pb-2 text-body">
+                        <li>Merchant: &nbsp;&nbsp; Samuel Joseph</li>
+                      </ul>
+
+                      <ul class="list-unstyled list-py-2 text-body">
+                        <li>Email: &nbsp;&nbsp; samuel@gmail.com</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card mb-3"
+              style="background: #fbfbfb; border: solid 1px #eaeaea"
+            >
+              <div class="card-body">
+                <h3 class="card-title mb-3">Provide Information</h3>
+                <div class="row mb-4">
+                  <div class="col">
+                    <label for="firstname" class="mb-2">First name</label>
+                    <input
+                      id="firstname"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="first name"
+                      aria-label="firstname"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="lastname" class="mb-2">Last name</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="last name"
+                      aria-label="lastname"
+                      id="lastname"
+                      name="lastname"
+                    />
+                  </div>
+                </div>
+                <!-- <div class="row mb-3">
+                  <div class="col">
+                    <label for="firstname" class="mb-2">Amount</label>
+                    <input
+                      id="amount"
+                      name="amount"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="amount"
+                      aria-label="amount"
+                    />
+                  </div>
+                </div> -->
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="firstname" class="mb-2">Email</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="email"
+                      aria-label="email"
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col">
+                    <label class="mb-2">Phone Number</label>
+                    <div class="input-group w-100">
+                      <input
+                        type="tel"
+                        id="mobile_number"
+                        name="mobile_number"
+                        class="form-control w-100"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <hr class="my-4" /> -->
+
+                <!-- <div class="row align-items-center">
+                  <span class="col-6">VAT included:</span>
+                  <h4 class="col-6 text-end text-dark mb-0">NGN 0.00</h4>
+                </div> -->
+
+                <!-- <hr class="my-4" /> -->
+
+                <!-- <div class="row align-items-center">
+                  <span class="col-6 text-dark fw-semibold">Total to pay:</span>
+                  <h3 class="col-6 text-end text-dark mb-0">$219.00</h3>
+                </div> -->
+
+                <!-- <hr class="my-4" /> -->
+
+                <!-- <div class="row align-items-center">
+                  <h5 class="col-12 text-center">NOTE</h5>
+                  <small class="col-12 text-center"
+                    >Payment can be done on the following account if otherwise
+                  </small>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- End Card -->
+          <div class="d-flex justify-content-center btn-sm gap-6">
+            <button
+              type="button"
+              class="btn btn-success"
+              id="paybutton"
+              style="cursor: pointer; z-index: 1"
+              onclick="handleButtonClick"
+            >
+              Proceed with Payment <i class="bi-shield-fill-plus ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS Implementing Plugins -->
+    <script>
+      const phoneInputField = document.querySelector("#mobile_number");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/idris-woodcore/checkout/v2/index.js"></script>
+    <!-- <script src="http://127.0.0.1:5500/index.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const buttonEle = document.getElementById("paybutton");
+      buttonEle.addEventListener("click", handleButtonClick);
+
+      function handleButtonClick() {
+        console.log("clicked");
+        const email = document.getElementById("email").value;
+        // const amount = document.getElementById("amount").value;
+        const firstName = document.getElementById("firstname").value;
+        const lastName = document.getElementById("lastname").value;
+        const mobile_number = document.getElementById("mobile_number").value;
+        const amount_ = document.getElementById("amount_").textContent;
+        const merchantConfig = {
+          display_name: `${firstName} ${lastName}`,
+          email: `${email}`,
+          mobile_number: `${mobile_number}`,
+          metadata: {},
+          payment_link: true,
+          amount: amount_,
+          "x-key":
+            "745323b5b1137582e0368967bfd6ae96c45a7e12d5261c448cf28a5e08c56926",
+        };
+        Pooler(merchantConfig);
+      }
+    </script>
+  </body>
+</html>
