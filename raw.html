@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="paymentForm">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email-address" required />
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="tel" id="amount" required />
+      </div>
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+      </div>
+      <div class="form-submit">
+        <button type="submit" onclick="handleButtonClick()" id="myButton">
+          Pay
+        </button>
+      </div>
+    </form>
+    <script src="http://127.0.0.1:5500/index.js"></script>
+    <script>
+      const paymentForm = document.getElementById("paymentForm");
+      paymentForm.addEventListener("submit", handleButtonClick, false);
+      function handleButtonClick(e) {
+        e?.preventDefault();
+        const email = document.getElementById("email-address").value;
+        const amount = document.getElementById("amount").value;
+        const firstName = document.getElementById("first-name").value;
+        const lastName = document.getElementById("last-name").value;
+        const merchantConfig = {
+          //   display_name: `${firstName} ${lastName}`,
+          display_name: `Microsoft Corporation`,
+          email: email,
+          mobile_number: "08189960542",
+          metadata: {},
+          payment_link: true,
+          amount: amount,
+          "x-key":
+            "skl_D+7m+90BNNcyV7SM0sb/iEdIaMfRUPUnzsKx0KiN7H9LNtT+m5NTZamT567TmYE0UzbhK7LwAN3xh47NMosZ8g==",
+        };
+        Pooler({ ...merchantConfig });
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <script src="https://cdn.jsdelivr.net/gh/idris-woodcore/checkout/index.js"></script> -->
